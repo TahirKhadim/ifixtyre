@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>I Fix Tyre - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.circular-container {
+			width: 100px;
+			/* Set the desired width and height for your circular container */
+			height: 100px;
+			border-radius: 50%;
+			/* Use border-radius to create a circular shape */
+			overflow: hidden;
+			/* Hide the overflowing parts of the image */
+		}
+	</style>
+	<!-- call svg Styling -->
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+		@-webkit-keyframes come-in {
+			0% {
+				-webkit-transform: translatey(100px);
+				transform: translatey(100px);
+				opacity: 0;
+			}
+
+			30% {
+				-webkit-transform: translateX(-50px) scale(0.4);
+				transform: translateX(-50px) scale(0.4);
+			}
+
+			70% {
+				-webkit-transform: translateX(0px) scale(1.2);
+				transform: translateX(0px) scale(1.2);
+			}
+
+			100% {
+				-webkit-transform: translatey(0px) scale(1);
+				transform: translatey(0px) scale(1);
+				opacity: 1;
+			}
+		}
+
+		@keyframes come-in {
+			0% {
+				-webkit-transform: translatey(100px);
+				transform: translatey(100px);
+				opacity: 0;
+			}
+
+			30% {
+				-webkit-transform: translateX(-50px) scale(0.4);
+				transform: translateX(-50px) scale(0.4);
+			}
+
+			70% {
+				-webkit-transform: translateX(0px) scale(1.2);
+				transform: translateX(0px) scale(1.2);
+			}
+
+			100% {
+				-webkit-transform: translatey(0px) scale(1);
+				transform: translatey(0px) scale(1);
+				opacity: 1;
+			}
+		}
+
+
+
+
+		.floating-container {
+			z-index: 100;
+			position: fixed;
+			width: 100px;
+			height: 100px;
+			bottom: 0;
+			right: 0;
+			margin: 35px 25px;
+		}
+
+		.floating-container:hover {
+			height: 300px;
+		}
+
+		.floating-container:hover .floating-button {
+			box-shadow: 0 10px 25px rgba(40, 40, 41, 0.6);
+			-webkit-transform: translatey(5px);
+			transform: translatey(5px);
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+		.floating-container:hover .element-container .float-element:nth-child(1) {
+			-webkit-animation: come-in 0.4s forwards 0.2s;
+			animation: come-in 0.4s forwards 0.2s;
+		}
+
+		.floating-container:hover .element-container .float-element:nth-child(2) {
+			-webkit-animation: come-in 0.4s forwards 0.4s;
+			animation: come-in 0.4s forwards 0.4s;
+		}
+
+		.floating-container:hover .element-container .float-element:nth-child(3) {
+			-webkit-animation: come-in 0.4s forwards 0.6s;
+			animation: come-in 0.4s forwards 0.6s;
+		}
+
+		.floating-container .floating-button {
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			background: #08ec2b;
+			bottom: 0;
+			border: 3px solid rgb(248, 248, 248);
+			border-radius: 50%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			color: white;
+			line-height: 65px;
+			text-align: center;
+			font-size: 23px;
+			z-index: 100;
+
+			cursor: pointer;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+		.floating-container .float-element {
+			position: relative;
+			display: block;
+			border-radius: 50%;
+
+			width: 50px;
+			height: 50px;
+			margin: 15px auto;
+			color: white;
+			font-weight: 500;
+			text-align: center;
+			line-height: 50px;
+			z-index: 0;
+			opacity: 0;
+			-webkit-transform: translateY(100px);
+			transform: translateY(100px);
+		}
+
+		.floating-container .float-element .material-icons {
+			vertical-align: middle;
+			font-size: 16px;
+		}
+
+		.floating-container .float-element:nth-child(1) {
+			background: #ffd903;
+
+		}
+
+		.para1 {
+			position: absolute;
+
+			bottom: 150px;
+			left: 10px;
+
+
+		}
+
+		.list li {
+
+			font-size: 25px;
+			color: #ffc436;
+			font-weight: 900;
+
+		}
+
+		li a {
+			color: rgb(234, 224, 224);
+			font-size: larger;
+
+		}
+
+		.nav-item a {
+			font-size: 2.5vh;
+		}
+
+		.nav-item h4,
+		.btn {
+			margin-right: 2vh;
+			color: white;
+		}
+	</style>
+	<!--  End call svg Styling -->
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-center">
+					<p class="mb-0 phone pl-md-2">
+						<a href="Tel:+447916312844" class="mr-2"><span class="fa fa-phone mr-1"></span>
+							+447916312844</a>
+						<a href="#"><span class="fa fa-paper-plane mr-1"></span> contact@ifixtyre.com</a>
+					</p>
+				</div>
+				<div class="col-md-6 d-flex justify-content-md-end">
+					<div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+
+							<a href="Surrey_chauffeur" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ========== Start Section ========== -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<img src="images/logo.png" alt="logo" class="img-fluid" width="100px" height="100px">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+					<li class="nav-item">
+						<h4>For Emergency</h4>
+					</li>
+					<div class="btn btn-warning"><a href="tel:+447916312844">+447916312844</a></div>
+
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+
+					<li class="nav-item "><a href="mobiletyrefitting.html" class="nav-link">Mobile Tyre
+							Fitting</a></li>
+
+					<li class="nav-item "><a href="breakdown.html" class="nav-link">BreakDown</a></li>
+					<li class="nav-item "><a href="jumpstart.html" class="nav-link">Jumpstart</a></li>
+
+					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+					<li class="nav-item "><a href="contact.php" class="nav-link">Contact Us</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<!-- ========== End Section ========== -->
+
+
+
+	<!-- END nav -->
+
+	<!-- ========== Start Section navbar ========== -->
+	<!-- Navbar -->
+
+	<!-- Navbar -->
+
+	<!-- ========== End Section navbar ========== -->
+	<div class="hero-wrap js-fullheight" style="background-image: url('pics/6.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+				data-scrollax-parent="true">
+				<div class="col-md-12 ftco-animate text-center  ">
+					<h1 class="  para1" style="color: #ffc436; text-shadow: 5px 5px 8px #070707;">
+						24/7 Tyre Fix
+						Emergency Service </h1>
+
+					<div class="list text-lg-left">
+						<ul>
+							<li>Tyre Flat</li>
+							<li>Tyre Puncture</li>
+							<li>Tyre Inflate</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<!-- Serveice section --
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch"
+								style="background-image: url(pics/roadside_assistence.jpg);"></div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3> Roadside Assistance</h3>
+							<div class="faded">
+								<p> Swift aid for vehicle troubles, including jump-starts, flat tyre assistance, and
+									refueling, ensuring you reach your destination trouble-free.</p>
+
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/12.jpg);"></div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Vehicle Recovery</h3>
+
+							<div class="faded">
+								<p> Prompt recovery services for breakdowns, accidents, and stuck vehicles, providing
+									peace of mind on the road.<br><br></p>
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch"
+								style="background-image: url(pics/mobile\ tyre\ fitting.jpg);"></div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Mobile Tyre Service</h3>
+
+							<div class="faded">
+								<p>On-the-spot tyre solutions, from flat tyre repairs to mobile fitting, keeping you
+									moving safely.<br><br>
+								</p>
+
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/motorbike.jpg);">
+							</div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Motorbike Rescue</h3>
+
+							<div class="faded">
+								<p>Specialized motorbike breakdown recovery, ensuring bikers get back on track
+									swiftly.<br><br></p>
+
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/jump\ start.jpg);">
+							</div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Jump-Start Assistance</h3>
+
+							<div class="faded">
+								<p>Quick jump-start services to revive your vehicle's battery, avoiding delays. <br><br>
+								</p>
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/wrongfule.jpg);">
+							</div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Fuel Refill Solutions</h3>
+
+							<div class="faded">
+								<p>Expert help in case of wrong fueling, preventing engine damage and getting you back
+									on your journey.</p>
+
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/accident.jpeg);">
+							</div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Accident Recovery</h3>
+
+							<div class="faded">
+								<p>Our responsive accident recovery service ensures your safety and peace of mind after
+									collisions.
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img align-self-stretch" style="background-image: url(pics/Stuck\ Vehicle.jpg);">
+							</div>
+						</div>
+						<div class="text pt-3 px-3 pb-4 text-center">
+							<h3>Stuck Vehicle Recovery</h3>
+
+							<div class="faded">
+								<p>Specialized assistance for freeing stuck vehicles, providing a way forward in
+									challenging situations.</p>
+
+							</div>
+							<a href="Tel:+447916312844">
+								<div class="btn btn-warning">Give us a call now</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End serveie Section -->
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-5 d-flex">
+					<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
+						style="background-image:url(2.jpg); height: 100vh; margin-top: 100px;">
+					</div>
+				</div>
+				<div class="col-md-7 pl-md-5 py-md-5">
+					<div class="heading-section pt-md-5">
+						<h2 class="mb-4">Why Choose Us?</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-6 services-2 w-100 d-flex">
+
+							<div class="text pl-3">
+								<h4>Expertise and Experience</h4>
+								<p>Clients choose us for our extensive expertise and years of experience in providing
+									top-notch services. Our track record of successfully handling breakdowns, accidents,
+									flat tyres, and refueling situations instills confidence.</p>
+							</div>
+						</div>
+						<div class="col-md-6 services-2 w-100 d-flex">
+							<div class="text pl-3">
+								<h4>Reliability and Timeliness</h4>
+								<p>We prioritize reliability, ensuring that clients can count on us during emergencies.
+									Our rapid response times and efficient solutions make us a trusted partner in
+									critical situations.</p>
+							</div>
+						</div>
+						<div class="col-md-6 services-2 w-100 d-flex">
+							<div class="text pl-3">
+								<h4>Customer-Centric Approach</h4>
+								<p>We stand out for our customer-centric approach. Clients appreciate our commitment to
+									their safety and peace of mind, as well as our dedication to resolving their
+									vehicle-related challenges promptly and professionally.</p>
+							</div>
+						</div>
+						<div class="col-md-6 services-2 w-100 d-flex">
+							<div class="text pl-3">
+								<h4>Convenience and Peace of Mind</h4>
+								<p>Our services offer convenience, relieving clients of the stress associated with car
+									troubles. Knowing they can rely on us for immediate assistance and expert support
+									gives them peace of mind on the road. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-counter" id="section-counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 text-center">
+						<div class="text">
+							<strong class="number" data-number="50">0</strong>
+						</div>
+						<div class="text">
+							<span>Customer</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 text-center">
+						<div class="text">
+							<strong class="number" data-number="25">0</strong>
+						</div>
+						<div class="text">
+							<span>Professionals</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 text-center">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+						</div>
+						<div class="text">
+							<span>Services</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Frequantly Ask Question -->
+
+	<!-- End Frequantly Ask Question -->
+
+
+	<section class="ftco-section testimony-section" style="background-image: url('pics/heroimage.jpeg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center pb-5 mb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2>Happy Clients &amp; Feedbacks</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></span></div>
+								<div class="text">
+									<p class="mb-4">I was in a hurry when I got a flat tyre, but your mobile tyre
+										service came to the rescue. The technician arrived quickly, repaired my tyre
+										efficiently, and I was back on the road in no time. Great service</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(pics/roger.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Roger Scott</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></span></div>
+								<div class="text">
+									<p class="mb-4">I can't thank your team enough for the convenience you provided. I
+										had a tyre blowout during a family trip, and your mobile tyre service saved the
+										day. Professional, friendly, and fast—highly recommended!</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name"> David R</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></span></div>
+								<div class="text">
+									<p class="mb-4">I used your mobile tyre service for a tyre change, and I'm
+										impressed. The technician was punctual, and the service was affordable. Having
+										this option is a lifesaver, especially for busy professionals like me.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(pics/emily.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Emily</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></span></div>
+								<div class="text">
+									<p class="mb-4">I had a flat tyre late at night, and your
+										24/7 mobile tyre
+										service
+										was a blessing. The technician arrived quickly, and the entyre process was
+										hassle-free. I'll definitely keep your number handy for future emergencies.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Mark</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="fa fa-quote-left"></span></div>
+								<div class="text">
+									<p class="mb-4">I had a tyre issue in the pouring rain, and your mobile tyre service
+										was a true lifesaver. The technician arrived promptly and even checked the
+										pressure on all my tyres. Exceptional service, especially when you're in a pinch
+									</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(pics/laura.jpeg)"></div>
+										<div class="pl-3">
+											<p class="name">Laura</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Call SVG -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<div class="floating-container">
+		<a href="Tel:">
+			<div class="floating-button"><svg style="height: 50px; width: 50px;" xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24" id="Phone">
+					<g data-name="Layer 2" fill="#ffd903" class="color000000 svgShape">
+						<g data-name="phone" fill="#ffd903" class="color000000 svgShape">
+							<rect width="10px" height="10px" opacity="0" fill="#ffd903" class="color000000 svgShape">
+							</rect>
+							<path
+								d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22z"
+								fill="#fff" class="color000000 svgShape"></path>
+						</g>
+					</g>
+				</svg></div>
+		</a>
+		<div class="element-container">
+
+
+
+		</div>
+	</div>
+
+	<!-- End Call SVG -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">TyreFix</h2>
+					<p>"Revive, Refuel, and Roll - Your TyreFix Roadside Savior".</p>
+					<ul class="ftco-footer-social p-0">
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Twitter"><span class="fa fa-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Facebook"><span class="fa fa-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Instagram"><span class="fa fa-instagram"></span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+				</div>
+				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+					<h2 class="footer-heading">Quick Links</h2>
+					<ul class="list-unstyled">
+						<li><a href="index.html" class="py-2 d-block">Home</a></li>
+						<li><a href="services.html" class="py-2 d-block">Services</a></li>
+						<li><a href="contact.php" class="py-2 d-block">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">Where We Are?</h2>
+					<div class="block-23 mb-3">
+						<ul>
+							<li><span class="icon fa fa-map"></span><span class="text"> 10-16 tiller road, canary wharf,
+									E14 8PX</span></li>
+							<li><a href="tel:+447916312844"><span class="icon fa fa-phone"></span><span
+										class="text">+447916312844</span></a></li>
+							<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+										class="text">info@ifixtyre.com</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+					<p class="copyright">
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> I Fix Tyre All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
